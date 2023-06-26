@@ -7,7 +7,7 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Nuevo Registro</a>
+    <a asp-action="Create">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -19,7 +19,7 @@
                 @Html.DisplayNameFor(model => model.Servicio)
             </th>
             <th>
-                Matricula del vehiculo
+                @Html.DisplayNameFor(model => model.VehiculomatriculaNavigation)
             </th>
             <th></th>
         </tr>
@@ -31,15 +31,15 @@
                 @Html.DisplayFor(modelItem => item.Fecha)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Servicio.Id)
+                @Html.DisplayFor(modelItem => item.Servicio.Nombre)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.VehiculomatriculaNavigation.Matricula)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.NroOrden">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.NroOrden">Detalles</a> |
-                <a asp-action="Delete" asp-route-id="@item.NroOrden">Eliminar</a>
+                <a asp-action="Edit" asp-route-id="@item.NroOrden">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.NroOrden">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.NroOrden">Delete</a>
             </td>
         </tr>
 }

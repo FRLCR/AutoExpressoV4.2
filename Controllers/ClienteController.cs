@@ -60,9 +60,29 @@ namespace AEFINAL.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(cliente);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                bool cliDNIExist = _context.Clientes.FirstOrDefault(c =>
+            c.Documento == cliente.Documento) != null;
+
+                bool clieMail = _context.Clientes.FirstOrDefault(c =>
+            c.CorreoElectronico == cliente.CorreoElectronico) != null;
+
+                if (cliDNIExist)
+                {
+                    ModelState.AddModelError("Documento", "Ya existe un Cliente con ese Documento.");
+                    return View(cliente);
+                }else if (clieMail)
+
+                {
+                    ModelState.AddModelError("CorreoElectronico", "Ya existe un Cliente con ese CorreoElectronico.");
+                    return View(cliente);
+                }
+
+                else
+                {
+                    _context.Add(cliente);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
             }
             return View(cliente);
         }
@@ -99,6 +119,16 @@ namespace AEFINAL.Controllers
             {
                 try
                 {
+                    bool cliMailExist = _context.Clientes.FirstOrDefault(c =>
+                     c.CorreoElectronico == cliente.CorreoElectronico) != null;
+
+                    if (cliMailExist)
+                    {
+                        ModelState.AddModelError("CorreoElectronico", "Ya existe un cliente con ese CorreoElectronico.");
+
+                        return View(cliente);
+                    }
+                    
                     _context.Update(cliente);
                     await _context.SaveChangesAsync();
                 }

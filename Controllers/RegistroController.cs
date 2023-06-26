@@ -49,7 +49,7 @@ namespace AEFINAL.Controllers
         // GET: Registro/Create
         public IActionResult Create()
         {
-            ViewData["Servicioid"] = new SelectList(_context.Servicios, "Id", "Id");
+            ViewData["Servicioid"] = new SelectList(_context.Servicios, "Id", "Nombre");
             ViewData["Vehiculomatricula"] = new SelectList(_context.Vehiculos, "Matricula", "Matricula");
             return View();
         }
@@ -61,13 +61,13 @@ namespace AEFINAL.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("NroOrden,Fecha,Vehiculomatricula,Servicioid")] Registro registro)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 _context.Add(registro);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["Servicioid"] = new SelectList(_context.Servicios, "Id", "Id", registro.Servicioid);
+            ViewData["Servicioid"] = new SelectList(_context.Servicios, "Id", "Nombre", registro.Servicioid);
             ViewData["Vehiculomatricula"] = new SelectList(_context.Vehiculos, "Matricula", "Matricula", registro.Vehiculomatricula);
             return View(registro);
         }
@@ -85,7 +85,7 @@ namespace AEFINAL.Controllers
             {
                 return NotFound();
             }
-            ViewData["Servicioid"] = new SelectList(_context.Servicios, "Id", "Id", registro.Servicioid);
+            ViewData["Servicioid"] = new SelectList(_context.Servicios, "Id", "Nombre", registro.Servicioid);
             ViewData["Vehiculomatricula"] = new SelectList(_context.Vehiculos, "Matricula", "Matricula", registro.Vehiculomatricula);
             return View(registro);
         }
@@ -102,7 +102,7 @@ namespace AEFINAL.Controllers
                 return NotFound();
             }
 
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 try
                 {
@@ -122,7 +122,7 @@ namespace AEFINAL.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["Servicioid"] = new SelectList(_context.Servicios, "Id", "Id", registro.Servicioid);
+            ViewData["Servicioid"] = new SelectList(_context.Servicios, "Id", "Nombre", registro.Servicioid);
             ViewData["Vehiculomatricula"] = new SelectList(_context.Vehiculos, "Matricula", "Matricula", registro.Vehiculomatricula);
             return View(registro);
         }

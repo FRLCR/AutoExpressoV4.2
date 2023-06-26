@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AEFINAL.props" />
+</Project>

@@ -61,7 +61,15 @@ namespace AEFINAL.Controllers
         {
             if (!ModelState.IsValid) // Crea el vehiculo SOLO SI NEGAMOS EL RETORNO DE ESTA FUNCION. ¿Por que no toma el modelo como valido?
             {
-                _context.Add(vehiculo);
+                bool vehiculoMatriExist = _context.Vehiculos.FirstOrDefault(c =>
+            c.Matricula == vehiculo.Matricula) != null;
+
+                if (vehiculoMatriExist)
+                {
+                    ModelState.AddModelError("Matricula", "Ya existe un vehiculo con esa Matricula.");
+                    return View(vehiculo);
+                }
+                    _context.Add(vehiculo);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -102,6 +110,7 @@ namespace AEFINAL.Controllers
             {
                 try
                 {
+
                     _context.Update(vehiculo);
                     await _context.SaveChangesAsync();
                 }

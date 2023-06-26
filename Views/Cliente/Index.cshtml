@@ -7,7 +7,7 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Nuevo Cliente</a>
+    <a asp-action="Create">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -19,7 +19,7 @@
                 @Html.DisplayNameFor(model => model.Apellido)
             </th>
             <th>
-                Correo Electronico
+                @Html.DisplayNameFor(model => model.CorreoElectronico)
             </th>
             <th></th>
         </tr>
@@ -37,9 +37,9 @@
                 @Html.DisplayFor(modelItem => item.CorreoElectronico)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Documento">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.Documento">Detalles</a> |
-                <a asp-action="Delete" asp-route-id="@item.Documento">Eliminar</a>
+                <a asp-action="Edit" asp-route-id="@item.Documento">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Documento">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Documento">Delete</a>
             </td>
         </tr>
 }
