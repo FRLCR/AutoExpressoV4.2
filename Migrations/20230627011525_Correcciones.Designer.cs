@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AEFINAL.Migrations
 {
     [DbContext(typeof(dbConnect))]
-    [Migration("20230626015525_migraFormatoFechaRegistro")]
-    partial class migraFormatoFechaRegistro
+    [Migration("20230627011525_Correcciones")]
+    partial class Correcciones
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

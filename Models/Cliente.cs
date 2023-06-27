@@ -7,7 +7,6 @@ namespace AEFINAL.Models;
 public partial class Cliente
 {
 
-
     [Required(ErrorMessage = "El documento del cliente es obligatorio")]
     public int Documento { get; set; }
 

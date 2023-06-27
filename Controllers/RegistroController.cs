@@ -61,8 +61,10 @@ namespace AEFINAL.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("NroOrden,Fecha,Vehiculomatricula,Servicioid")] Registro registro)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
+                // HACER ESTO MISMO EN EL EDIT
+                // llamar a una funcion que devuelva un boolean que chequee duplicados.
                 _context.Add(registro);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

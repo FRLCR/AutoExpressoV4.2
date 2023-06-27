@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
@@ -9,12 +10,14 @@ public partial class Registro
     public int NroOrden { get; set; }
 
     [Required(ErrorMessage = "La Fecha del Registro es obligatorio")]
-    public string Fecha { get; set; } = null!;
+    [DataType(DataType.Date)]
+   // [Range(typeof(DateTime), "01-01-1970", DateTime.Now.toString(), ErrorMessage = "Date of Birth Must be between 01-01-1970 and 01-01-2005")]
+    [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
+    public DateTime Fecha { get; set; }
 
 
     [Required(ErrorMessage = "La matricula del Registro es obligatorio")]
     [Display(Name = "Matricula del vehículo")]
-
     public string Vehiculomatricula { get; set; } = null!;
 
 

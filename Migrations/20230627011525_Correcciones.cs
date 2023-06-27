@@ -1,11 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace AEFINAL.Migrations
 {
     /// <inheritdoc />
-    public partial class primeraMigra : Migration
+    public partial class Correcciones : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -64,7 +65,7 @@ namespace AEFINAL.Migrations
                 {
                     nroOrden = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    fecha = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    fecha = table.Column<DateTime>(type: "datetime2", nullable: false),
                     vehiculomatricula = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     servicioid = table.Column<int>(type: "int", nullable: false)
                 },
