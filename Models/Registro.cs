@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data;
 
 namespace AEFINAL.Models;
 
@@ -10,8 +11,10 @@ public partial class Registro
     public int NroOrden { get; set; }
 
     [Required(ErrorMessage = "La Fecha del Registro es obligatorio")]
-    [DataType(DataType.Date)]
-   // [Range(typeof(DateTime), "01-01-1970", DateTime.Now.toString(), ErrorMessage = "Date of Birth Must be between 01-01-1970 and 01-01-2005")]
+    [DataType(DataType.Date)]       
+
+    // No valida bien la fecha NI HARCODEANDOLO.
+    //[Range(typeof(DateTime), "01-01-2023", "31-12-2023", ErrorMessage = "Error fecha invalida.")]
     [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
     public DateTime Fecha { get; set; }
 
@@ -26,6 +29,6 @@ public partial class Registro
     public int Servicioid { get; set; }
 
     public virtual Servicio Servicio { get; set; } = null!;
-
+    [Display(Name = "Matricula del Vehículo")]
     public virtual Vehiculo VehiculomatriculaNavigation { get; set; } = null!;
 }

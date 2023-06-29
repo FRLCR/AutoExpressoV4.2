@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AEFINAL.Migrations
 {
     [DbContext(typeof(dbConnect))]
-    [Migration("20230627011525_Correcciones")]
-    partial class Correcciones
+    [Migration("20230628154518_update2.0")]
+    partial class update20
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace AEFINAL.Migrations
 {
     /// <inheritdoc />
-    public partial class Correcciones : Migration
+    public partial class update20 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

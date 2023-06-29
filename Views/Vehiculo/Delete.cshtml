@@ -6,11 +6,17 @@
 
 <h1>Borrar</h1>
 
-<h3>Estás seguro de eliminar este vehiculo?</h3>
+<h3>Los cambios que realices no podran dar marcha atras</h3>
 <div>
     <h4>Vehiculo</h4>
     <hr />
     <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Matricula)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Matricula)
+        </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Marca)
         </dt>
@@ -29,11 +35,17 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.ClientedocumentoNavigation.Documento)
         </dd>
+        <dt class="col-sm-2">
+           Nombre del Dueño
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ClientedocumentoNavigation.NombreCompleto)
+        </dd>
     </dl>
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="Matricula" />
         <input type="submit" value="Eliminar" class="btn btn-danger" /> |
-        <a asp-action="Index">Volver a la lista</a>
+        <a asp-action="Index">Volver al listado</a>
     </form>
 </div>

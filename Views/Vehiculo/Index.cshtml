@@ -13,6 +13,9 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.Matricula)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Marca)
             </th>
             <th>
@@ -21,12 +24,18 @@
             <th>
                 Documento Cliente             
             </th>
+            <th>
+                Nombre Cliente
+            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Matricula)
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Marca)
             </td>
@@ -36,6 +45,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.ClientedocumentoNavigation.Documento)
             </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ClientedocumentoNavigation.NombreCompleto)
+                </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Matricula">Editar</a> |
                 <a asp-action="Details" asp-route-id="@item.Matricula">Detalles</a> |

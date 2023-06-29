@@ -56,7 +56,7 @@ namespace AEFINAL.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Documento,Nombre,Apellido,CorreoElectronico")] Cliente cliente)
+        public async Task<IActionResult> Create([Bind("Documento,NombreCompleto, CorreoElectronico")] Cliente cliente)
         {
             if (ModelState.IsValid)
             {
@@ -108,7 +108,7 @@ namespace AEFINAL.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Documento,Nombre,Apellido,CorreoElectronico")] Cliente cliente)
+        public async Task<IActionResult> Edit(int id, [Bind("Documento,NombreCompleto,CorreoElectronico")] Cliente cliente)
         {
             if (id != cliente.Documento)
             {

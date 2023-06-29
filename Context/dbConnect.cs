@@ -37,9 +37,11 @@ public partial class dbConnect : DbContext
             entity.Property(e => e.Documento)
                 .ValueGeneratedNever()
                 .HasColumnName("documento");
-            entity.Property(e => e.Apellido).HasColumnName("apellido");
+            //    entity.Property(e => e.Apellido).HasColumnName("apellido");
+            entity.Property(e => e.NombreCompleto).HasColumnName("nombrecompleto");
             entity.Property(e => e.CorreoElectronico).HasColumnName("correoElectronico");
-            entity.Property(e => e.Nombre).HasColumnName("nombre");
+        //   entity.Property(e => e.Nombre).HasColumnName("nombre");
+            
         });
 
         modelBuilder.Entity<Registro>(entity =>
