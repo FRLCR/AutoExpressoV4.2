@@ -9,117 +9,117 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AEFINAL
 build_property.RootNamespace = AEFINAL
-build_property.ProjectDir = C:\Users\Franco\source\repos\AE_PLAC\
+build_property.ProjectDir = C:\Users\johan\source\Nueva carpeta\AutoExpressoV4.2\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Franco\source\repos\AE_PLAC
+build_property.MSBuildProjectDirectory = C:\Users\johan\source\Nueva carpeta\AutoExpressoV4.2
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Cliente/Create.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Cliente/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Cliente/Delete.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Cliente/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Cliente/Details.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Cliente/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Cliente/Edit.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Cliente/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Cliente/Index.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Cliente/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Home/Index.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Home/Privacy.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Registro/Create.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Registro/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Registro/Delete.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Registro/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Registro/Details.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Registro/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Registro/Edit.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Registro/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Registro/Index.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Registro/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Servicio/Create.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Servicio/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Servicio/Delete.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Servicio/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Servicio/Details.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Servicio/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Servicio/Edit.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Servicio/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Servicio/Index.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Servicio/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Shared/Error.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Vehiculo/Create.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Vehiculo/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Vehiculo/Delete.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Vehiculo/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Vehiculo/Details.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Vehiculo/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Vehiculo/Edit.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Vehiculo/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Vehiculo/Index.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Vehiculo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/_ViewImports.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/_ViewStart.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Franco/source/repos/AE_PLAC/Views/Shared/_Layout.cshtml]
+[C:/Users/johan/source/Nueva carpeta/AutoExpressoV4.2/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bov5th3axq

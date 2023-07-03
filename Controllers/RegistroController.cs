@@ -63,8 +63,30 @@ namespace AEFINAL.Controllers
         {
             if (!ModelState.IsValid)
             {
-                // HACER ESTO MISMO EN EL EDIT
-                // llamar a una funcion que devuelva un boolean que chequee duplicados.
+
+                bool registroFechaExist = _context.Registros.FirstOrDefault(c =>
+                     c.Fecha == registro.Fecha) != null;
+                bool registroOrdenExist = _context.Registros.FirstOrDefault(c =>
+                     c.NroOrden == registro.NroOrden) != null;
+                bool registroMatriculaExist = _context.Registros.FirstOrDefault(c =>
+                     c.Vehiculomatricula == registro.Vehiculomatricula) != null;
+
+                if (registroFechaExist && registroOrdenExist && registroMatriculaExist)
+                {
+                    ModelState.AddModelError("Vehiculomatricula", "Ya existe un registro con esos datos.");
+
+                    return View(registro);
+                }
+
+                DateTime fechaMaxima = DateTime.Now;
+                DateTime fechaSeleccionada = registro.Fecha;
+
+                if (fechaSeleccionada > fechaMaxima)
+                {
+                    ModelState.AddModelError("Fecha", "La fecha seleccionada no puede ser posterior a la fecha actual.");
+                    return View(registro);
+                }
+
                 _context.Add(registro);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -73,6 +95,8 @@ namespace AEFINAL.Controllers
             ViewData["Vehiculomatricula"] = new SelectList(_context.Vehiculos, "Matricula", "Matricula", registro.Vehiculomatricula);
             return View(registro);
         }
+
+
 
         // GET: Registro/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -172,5 +196,6 @@ namespace AEFINAL.Controllers
         {
           return (_context.Registros?.Any(e => e.NroOrden == id)).GetValueOrDefault();
         }
+
     }
 }

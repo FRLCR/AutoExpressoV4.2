@@ -62,7 +62,7 @@ namespace AEFINAL.Controllers
             if (!ModelState.IsValid) // Crea el vehiculo SOLO SI NEGAMOS EL RETORNO DE ESTA FUNCION. ¿Por que no toma el modelo como valido?
             {
                 bool vehiculoMatriExist = _context.Vehiculos.FirstOrDefault(c =>
-            c.Matricula == vehiculo.Matricula) != null;
+                c.Matricula == vehiculo.Matricula) != null;
 
                 if (vehiculoMatriExist)
                 {
