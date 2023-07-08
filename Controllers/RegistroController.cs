@@ -87,6 +87,7 @@ namespace AEFINAL.Controllers
                     return View(registro);
                 }
 
+
                 _context.Add(registro);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -128,7 +129,7 @@ namespace AEFINAL.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 try
                 {
@@ -147,6 +148,16 @@ namespace AEFINAL.Controllers
                     }
                 }
                 return RedirectToAction(nameof(Index));
+            }
+
+
+            DateTime fechaMaxima = DateTime.Now;
+            DateTime fechaSeleccionada = registro.Fecha;
+
+            if (fechaSeleccionada > fechaMaxima)
+            {
+                ModelState.AddModelError("Fecha", "La fecha seleccionada no puede ser posterior a la fecha actual.");
+                return View(registro);
             }
             ViewData["Servicioid"] = new SelectList(_context.Servicios, "Id", "Nombre", registro.Servicioid);
             ViewData["Vehiculomatricula"] = new SelectList(_context.Vehiculos, "Matricula", "Matricula", registro.Vehiculomatricula);
@@ -188,6 +199,7 @@ namespace AEFINAL.Controllers
                 _context.Registros.Remove(registro);
             }
             
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

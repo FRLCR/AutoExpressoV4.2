@@ -7,7 +7,7 @@
 <h1>Vehiculos Registrados</h1>
 
 <p>
-    <a asp-action="Create">Nuevo Vehiculo</a>
+    <a class="btn btn-success" asp-action="Create">Nuevo Vehiculo</a>
 </p>
 <table class="table">
     <thead>
@@ -49,9 +49,9 @@
                     @Html.DisplayFor(modelItem => item.ClientedocumentoNavigation.NombreCompleto)
                 </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Matricula">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.Matricula">Detalles</a> |
-                <a asp-action="Delete" asp-route-id="@item.Matricula">Eliminar</a>
+                    <a class ="btn btn-primary" asp-action="Edit" asp-route-id="@item.Matricula">Editar</a> |
+                    <a class="btn btn-secondary"  asp-action="Details" asp-route-id="@item.Matricula">Detalles</a> |
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Matricula">Eliminar</a>
             </td>
         </tr>
 }

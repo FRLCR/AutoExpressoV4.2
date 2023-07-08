@@ -4,9 +4,9 @@
     ViewData["Title"] = "Delete";
 }
 
-<h1>Delete</h1>
+<h1>Eliminar Registro</h1>
 
-<h3>Los cambios que realices no podran dar marcha atras</h3>
+<h3>Los cambios que realices no podran dar marcha atrás</h3>
 <div>
     <h4>Registro</h4>
     <hr />
@@ -33,7 +33,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="NroOrden" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Volver al listado</a>
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a class="btn btn-dark" asp-action="Index">Volver al listado</a>
     </form>
 </div>
